@@ -1,0 +1,34 @@
+{
+  "name": "test-setup",
+  "version": "0.0.1",
+  "description": "Testing setup experiments for fuix library and Karma test runner.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/martinrossil/test-setup.git"
+  },
+  "keywords": [
+    "Test",
+    "fuix",
+    "karma"
+  ],
+  "author": "Martin Rossil",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/martinrossil/test-setup/issues"
+  },
+  "homepage": "https://github.com/martinrossil/test-setup#readme",
+  "devDependencies": {
+    "@types/jest": "^27.4.1",
+    "jest": "^27.5.1",
+    "ts-jest": "^27.1.4",
+    "ts-node": "^10.7.0",
+    "typescript": "^4.6.3"
+  },
+  "dependencies": {
+    "fuix": "^0.1.3"
+  }
+}
