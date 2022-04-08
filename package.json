@@ -4,7 +4,10 @@
   "description": "Testing setup experiments for fuix library and Karma test runner.",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "coverage": "vitest run --coverage",
+    "dev": "vite",
+    "test": "vitest",
+    "test:ui": "vitest --ui"
   },
   "repository": {
     "type": "git",
@@ -21,14 +24,18 @@
     "url": "https://github.com/martinrossil/test-setup/issues"
   },
   "homepage": "https://github.com/martinrossil/test-setup#readme",
-  "devDependencies": {
-    "@types/jest": "^27.4.1",
-    "jest": "^27.5.1",
-    "ts-jest": "^27.1.4",
-    "ts-node": "^10.7.0",
-    "typescript": "^4.6.3"
-  },
   "dependencies": {
     "fuix": "^0.1.3"
+  },
+  "devDependencies": {
+    "@vitest/ui": "^0.9.1",
+    "c8": "^7.11.0",
+    "happy-dom": "^2.55.0",
+    "jsdom": "^19.0.0",
+    "vite": "^2.9.1",
+    "vitest": "^0.9.1"
+  },
+  "stackblitz": {
+    "startCommand": "npm run test:ui"
   }
 }
