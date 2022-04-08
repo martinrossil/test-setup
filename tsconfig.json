@@ -1,21 +1,7 @@
 {
     "compilerOptions": {
-        "target": "esnext",
-        "module": "esnext",
-        "moduleResolution": "Node",
-        "strict": true,
-        "strictNullChecks": true,
-        "noImplicitAny": true,
-        "sourceMap": false,
-        "removeComments": true,
-        "types": ["jest"],
-        "esModuleInterop": true,
-        "allowSyntheticDefaultImports": true
-    },
-    "include": [
-        "src/**/*"
-    ],
-    "exclude": [
-        "node_modules"
-    ]
+        "experimentalDecorators": true,
+        "useDefineForClassFields": false,
+        "importsNotUsedAsValues": "preserve"
+    }
 }
