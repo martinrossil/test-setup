@@ -14,3 +14,12 @@ test('when testComponent.twenty = 20, testComponent.twenty should be 20', () => 
     expect(testComponent.twenty).toBe(20);
     testComponent.remove();
 });
+
+test('when testComponent.nums = "two", testComponent.nums should be "two"', () => {
+    const testComponent: TestComponent = new TestComponent();
+    document.body.appendChild(testComponent);
+    console.log(window.innerWidth, window.innerHeight, testComponent.getBoundingClientRect(), testComponent.width, testComponent.height);
+    testComponent.nums = 'two';
+    expect(testComponent.nums).toBe('two');
+    testComponent.remove();
+});
