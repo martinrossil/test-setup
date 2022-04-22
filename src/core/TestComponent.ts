@@ -4,14 +4,16 @@ import ITestComponent from './ITestComponent';
 export default class TestComponent extends Component implements ITestComponent {
     public constructor() {
         super();
-        console.log('t-c');
-        this.style.display = 'block';
-        this.setSize(300, 200);
+        // console.log('t-c');
+        this.style.display = 'inline-block';
+        this.backgroundColor = 'red';
+        this.height = 400;
+        // this.setSize(300, 200);
     }
 
     public connectedCallback() {
-        console.log('connectedCallback()');
-        console.log(this.getBoundingClientRect());
+        // console.log('connectedCallback()');
+        // console.log(this.getBoundingClientRect());
     }
 
     public test(input: string): string {
