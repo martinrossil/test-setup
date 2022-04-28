@@ -5,7 +5,7 @@ export default class TestComponent extends Component implements ITestComponent {
     public constructor() {
         super();
         // console.log('t-c');
-        this.style.display = 'inline-block';
+        this.style.display = 'block';
         this.backgroundColor = 'red';
         this.height = 400;
         // this.setSize(300, 200);
